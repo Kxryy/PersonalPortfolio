@@ -267,3 +267,65 @@ span{
     }
 }
 
+/* ===== Experience & Projects (Minimal) ===== */
+
+.experience-projects {
+    min-height: 100vh;
+    padding: 6rem 9%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.exp-content {
+    max-width: 800px;
+    width: 100%;
+}
+
+.exp-content h1 {
+    font-size: 4.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Skills */
+.skills-list {
+    list-style: none;
+    margin-bottom: 5rem;
+}
+
+.skills-list li {
+    font-size: 1.7rem;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid rgba(183, 75, 75, 0.2);
+}
+
+/* Projects */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.projects a {
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 1.2rem;
+    color: white;
+    border: 1px solid #b74b4b;
+    border-radius: 1.2rem;
+    transition: 0.3s ease;
+}
+
+.projects a:hover {
+    background-color: #b74b4b;
+    color: black;
+    box-shadow: 0 0 15px #b74b4b;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .exp-content h1 {
+        font-size: 3.5rem;
+    }
+}
